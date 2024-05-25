@@ -1480,7 +1480,7 @@ usage()
 	printf("\t-r | --driver           Operate on Driver variables, not Boot Variables.\n");
 	printf("\t-t | --timeout seconds  Set boot manager timeout waiting for user input.\n");
 	printf("\t-T | --delete-timeout   Delete Timeout.\n");
-	printf("\t-u | --unicode | --UCS-2  Handle extra args as UCS-2 (default is ASCII).\n");
+	printf("\t-u | --unicode | --UCS-2  Use UCS-2 encoding (instead of ASCII) to display/encode entry data.\n");
 	printf("\t-v | --verbose          Print additional information.\n");
 	printf("\t-V | --version          Return version and exit.\n");
 	printf("\t-y | --sysprep          Operate on SysPrep variables, not Boot Variables.\n");
