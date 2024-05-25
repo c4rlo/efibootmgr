@@ -1078,7 +1078,7 @@ show_var_path(efi_load_option *load_option, size_t boot_data_size)
 		rc = parser(text_path, text_path_len,
 			    optional_data, optional_data_len);
 		if (rc < 0) {
-			warning("Could not parse device path");
+			warning("Could not parse optional data");
 			free(text_path);
 			return;
 		}
@@ -1923,7 +1923,7 @@ main(int argc, char **argv)
 	if (opts.active >= 0) {
 		if (opts.num == -1) {
 			errorx(4,
-			       "You must specify a entry to activate (see the -b option)");
+			       "You must specify an entry to activate (see the -b option)");
 		} else {
 			ret = set_active_state(prefices[mode]);
 			if (ret < 0)
